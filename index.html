@@ -1,0 +1,988 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Small Business SEO UK | Freelance SEO Specialist | Grabuild</title>
+
+<meta name="description" content="Grow your UK small business with practical SEO from Mr Shuvro at Grabuild. Improve Google visibility, attract relevant visitors and generate quality leads.">
+<meta name="author" content="Shuvro Haldar">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://grabuild.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Small Business SEO UK | Grabuild">
+<meta property="og:description" content="Practical SEO for UK small businesses. Improve Google visibility and generate quality leads with Grabuild.">
+<meta property="og:url" content="https://grabuild.com/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://grabuild.com/img/FreelanceSEOSpecialist.webp">
+<meta property="og:image:alt" content="Freelance SEO specialist at Grabuild">
+<meta property="og:site_name" content="Grabuild">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Small Business SEO UK | Grabuild">
+<meta name="twitter:description" content="Practical SEO for UK small businesses. Improve Google visibility and generate quality leads.">
+<meta name="twitter:image" content="https://grabuild.com/img/FreelanceSEOSpecialist.webp">
+<meta name="twitter:image:alt" content="Freelance SEO specialist at Grabuild">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="https://grabuild.com/img/GRABUILD.COM.png?v=2">
+<link rel="shortcut icon" href="https://grabuild.com/img/GRABUILD.COM.png?v=2">
+<link rel="apple-touch-icon" href="https://grabuild.com/img/GRABUILD.COM.png?v=2">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Grabuild additions -->
+<style>
+/* Pricing */
+.pricing-section {
+  background: #111;
+  color: #FBFAF4;
+}
+.pricing-section .section-head p {
+  color: #d2d5c9;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+.price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid rgba(241,247,212,.18);
+  border-radius: 20px;
+  background: #1b1d1b;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.price-card:hover {
+  transform: translateY(-6px);
+  border-color: #FF788D;
+  box-shadow: 0 16px 40px rgba(255,120,141,.12);
+}
+.price-card.featured {
+  border-color: #FF788D;
+  background: linear-gradient(155deg, #292126, #1b1d1b 65%);
+}
+.price-label {
+  display: inline-block;
+  width: fit-content;
+  padding: 7px 13px;
+  margin-bottom: 18px;
+  border-radius: 30px;
+  background: rgba(255,120,141,.14);
+  color: #FF9AAA;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.price-card h3 {
+  margin: 0 0 8px;
+  color: #FBFAF4;
+  font-size: 24px;
+}
+.price-amount {
+  margin: 8px 0 14px;
+  color: #FF9AAA;
+  font-size: clamp(36px, 4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -.05em;
+}
+.price-amount small {
+  color: #d2d5c9;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.price-description {
+  min-height: 75px;
+  color: #d2d5c9;
+  line-height: 1.65;
+}
+.price-features {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 28px;
+}
+.price-features li {
+  position: relative;
+  padding: 10px 0 10px 24px;
+  border-bottom: 1px solid rgba(241,247,212,.09);
+  color: #f1f1e9;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.price-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #FF9AAA;
+  font-weight: 800;
+}
+.price-card .btn2 {
+  margin-top: auto;
+  justify-content: center;
+  text-align: center;
+}
+.pricing-note {
+  margin-top: 24px;
+  color: #c9cbbf;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Approach number visibility */
+#process .num-tag {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 16px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255,120,141,.6);
+  border-radius: 999px;
+  color: #FF9AAA !important;
+  background: rgba(255,120,141,.12);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  opacity: 1 !important;
+  text-shadow: 0 0 14px rgba(255,120,141,.2);
+  transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+}
+#process .svc-card:hover .num-tag {
+  transform: translateY(-3px);
+  background: rgba(255,120,141,.2);
+  box-shadow: 0 8px 24px rgba(255,120,141,.15);
+}
+
+/* Contact form */
+.grabuild-form .field {
+  margin-bottom: 16px;
+}
+.grabuild-form label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.grabuild-form input,
+.grabuild-form select,
+.grabuild-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid rgba(120,120,120,.35);
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.grabuild-form textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+.grabuild-form input:focus,
+.grabuild-form select:focus,
+.grabuild-form textarea:focus {
+  border-color: #FF788D;
+  box-shadow: 0 0 0 3px rgba(255,120,141,.12);
+}
+.grabuild-form select option {
+  color: #111;
+  background: #fff;
+}
+.grabuild-form button {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+.grabuild-form .form-note {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .price-description {
+    min-height: 0;
+  }
+  .price-card {
+    padding: 24px;
+  }
+}
+</style>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://grabuild.com/#organization",
+      "name": "Grabuild",
+      "url": "https://grabuild.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://grabuild.com/img/GRABUILD.COM.png"
+      },
+      "image": "https://grabuild.com/img/GRABUILD.COM.png"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://grabuild.com/#person",
+      "name": "Shuvro Haldar",
+      "alternateName": "Mr Shuvro",
+      "jobTitle": "Freelance SEO Specialist",
+      "url": "https://grabuild.com/",
+      "worksFor": {
+        "@id": "https://grabuild.com/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://grabuild.com/#website",
+      "url": "https://grabuild.com/",
+      "name": "Grabuild",
+      "publisher": {
+        "@id": "https://grabuild.com/#organization"
+      },
+      "inLanguage": "en-GB"
+    }
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+
+    <a class="brand" href="#top" aria-label="Grabuild home">
+      <img src="img/GRABUILD.COM.png" alt="Grabuild logo" width="42" height="42" style="width:42px;height:42px;object-fit:contain;display:block;">
+      <span>Grabuild<small>SEO for Small Businesses</small></span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Resources</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#process">Our Approach</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a class="btn2" href="https://grabuild.com/free-seo-audit/">
+        Free SEO Audit
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 17 17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-name">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+
+      <span class="hero-badge reveal">
+        <span class="dot" aria-hidden="true"></span>
+        SEO Solutions for UK Small Businesses
+      </span>
+
+      <h1 id="hero-name" class="reveal" data-delay="1">
+        Small Business
+        <br>
+        <span class="accent">SEO UK.</span>
+      </h1>
+
+      <p class="role reveal" data-delay="2">
+        Freelance SEO Specialist — Mr Shuvro
+      </p>
+
+      <p class="intro reveal" data-delay="2">
+        I help small businesses improve their visibility on Google through practical SEO strategies. From technical improvements to on-page optimisation and link building, Grabuild focuses on helping your website reach the right audience.
+      </p>
+
+      <div class="hero-cta reveal" data-delay="3">
+
+        <a class="btn2" href="https://grabuild.com/free-seo-audit/">
+          Get a Free SEO Audit
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <a class="btn2 btn2--ghost" href="#services">
+          View SEO Services
+        </a>
+
+      </div>
+
+      <ul class="socials reveal" data-delay="3" aria-label="Social profiles">
+        <!-- Add verified social profile links here later -->
+      </ul>
+
+    </div>
+
+    <figure class="hero-figure reveal" data-delay="2">
+      <div class="frame">
+        <img
+          src="img/FreelanceSEOSpecialist.webp"
+          alt="Freelance SEO specialist at Grabuild"
+          width="460"
+          height="575"
+          fetchpriority="high"
+          decoding="async">
+      </div>
+
+      <div class="hero-chip" aria-hidden="true">
+        <span class="num">SEO</span>
+        <span class="lbl">Focused on<br>business growth</span>
+      </div>
+    </figure>
+
+  </div>
+</section>
+
+<!-- SEO TOPICS MARQUEE -->
+<section class="tools-band" aria-label="SEO services and focus areas">
+  <div class="wrap">
+    <p class="tools-label">SEO areas I focus on</p>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack">
+
+      <span class="tool-chip">Technical SEO</span>
+      <span class="tool-chip">On-Page SEO</span>
+      <span class="tool-chip">Off-Page SEO</span>
+      <span class="tool-chip">Local SEO</span>
+      <span class="tool-chip">Keyword Research</span>
+      <span class="tool-chip">Website Audits</span>
+      <span class="tool-chip">Content Optimisation</span>
+      <span class="tool-chip">Link Building</span>
+
+      <span class="tool-chip" aria-hidden="true">Technical SEO</span>
+      <span class="tool-chip" aria-hidden="true">On-Page SEO</span>
+      <span class="tool-chip" aria-hidden="true">Off-Page SEO</span>
+      <span class="tool-chip" aria-hidden="true">Local SEO</span>
+      <span class="tool-chip" aria-hidden="true">Keyword Research</span>
+      <span class="tool-chip" aria-hidden="true">Website Audits</span>
+      <span class="tool-chip" aria-hidden="true">Content Optimisation</span>
+      <span class="tool-chip" aria-hidden="true">Link Building</span>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" aria-labelledby="about-h">
+  <div class="wrap about-grid">
+
+    <figure class="about-figure reveal">
+      <img
+        src="img/about.jpg"
+        alt="About Shuvro Haldar and his SEO work at Grabuild"
+        width="480"
+        height="600"
+        loading="lazy"
+        decoding="async">
+      <span class="tag">SEO Specialist<br>Grabuild</span>
+    </figure>
+
+    <div class="about-body">
+
+      <span class="eyebrow">A little about me</span>
+
+      <h2 id="about-h" class="reveal">
+        Practical SEO built around your business goals.
+      </h2>
+
+      <p class="lead reveal" data-delay="1">
+        I'm Shuvro Haldar, a freelance SEO specialist and the founder of Grabuild. I work with small businesses looking to improve their search visibility and build a stronger presence on Google.
+      </p>
+
+      <p class="reveal" data-delay="1">
+        My work focuses on the essential parts of SEO: understanding search intent, improving website structure, optimising pages, resolving technical issues and building relevant authority.
+      </p>
+
+      <p class="reveal" data-delay="2">
+        I believe SEO should be practical, transparent and aligned with real business needs. The aim is not simply to attract more visitors, but to help the right people find your business.
+      </p>
+
+      <div class="stats reveal" data-delay="2">
+
+        <div class="stat">
+          <div class="num"><span class="val">3</span></div>
+          <div class="lbl">Core SEO Services</div>
+        </div>
+
+        <div class="stat">
+          <div class="num"><span class="val">UK</span></div>
+          <div class="lbl">Target Market</div>
+        </div>
+
+        <div class="stat">
+          <div class="num"><span class="val">SEO</span></div>
+          <div class="lbl">Main Focus</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section--forest on-dark" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">What I do</span>
+      <h2 id="svc-h">SEO services for growing businesses</h2>
+      <p>
+        Three essential areas of SEO, working together to improve your website's search performance and visibility.
+      </p>
+    </div>
+
+    <div class="svc-grid">
+
+      <article class="svc-card reveal">
+
+        <span class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M3 9h18M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+
+        <h3>On-Page SEO</h3>
+
+        <p>
+          Improve page content, headings, metadata, internal links and keyword targeting to help search engines understand your website and its relevance.
+        </p>
+
+        <span class="num-tag">01 — On-Page</span>
+
+      </article>
+
+      <article class="svc-card reveal" data-delay="1">
+
+        <span class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 3.5v17M3.5 12h17" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+          </svg>
+        </span>
+
+        <h3>Off-Page SEO</h3>
+
+        <p>
+          Strengthen your website's authority through relevant link building, backlink analysis and a considered off-page SEO strategy.
+        </p>
+
+        <span class="num-tag">02 — Off-Page</span>
+
+      </article>
+
+      <article class="svc-card reveal" data-delay="2">
+
+        <span class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            <rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            <rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            <rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </span>
+
+        <h3>Technical SEO</h3>
+
+        <p>
+          Identify and address technical issues involving crawling, indexing, website structure, page performance, canonical URLs and other SEO essentials.
+        </p>
+
+        <span class="num-tag">03 — Technical</span>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing-section on-dark" id="pricing" aria-labelledby="pricing-h">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Simple monthly plans</span>
+      <h2 id="pricing-h">SEO packages for small businesses</h2>
+      <p>
+        Choose a starting point for your SEO. Each plan can be discussed and adjusted around your website's needs.
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <article class="price-card reveal">
+        <span class="price-label">Getting started</span>
+        <h3>Starter SEO</h3>
+        <div class="price-amount">$99 <small>/ month</small></div>
+        <p class="price-description">
+          A practical starting point for small websites that need essential SEO improvements.
+        </p>
+        <ul class="price-features">
+          <li>Basic website SEO review</li>
+          <li>On-page SEO improvements</li>
+          <li>Keyword research</li>
+          <li>Title and meta description review</li>
+          <li>Monthly progress summary</li>
+        </ul>
+        <a class="btn2 btn2--ghost" href="#contact" data-plan="Starter SEO">Choose Starter</a>
+      </article>
+
+      <article class="price-card featured reveal" data-delay="1">
+        <span class="price-label">Popular choice</span>
+        <h3>Growth SEO</h3>
+        <div class="price-amount">$199 <small>/ month</small></div>
+        <p class="price-description">
+          For businesses ready to improve search visibility and build a stronger SEO foundation.
+        </p>
+        <ul class="price-features">
+          <li>Everything in Starter</li>
+          <li>Deeper on-page SEO work</li>
+          <li>Technical SEO checks</li>
+          <li>Content and keyword guidance</li>
+          <li>Internal linking improvements</li>
+          <li>Monthly performance review</li>
+        </ul>
+        <a class="btn2" href="#contact" data-plan="Growth SEO">Choose Growth</a>
+      </article>
+
+      <article class="price-card reveal" data-delay="2">
+        <span class="price-label">More comprehensive</span>
+        <h3>Professional SEO</h3>
+        <div class="price-amount">$349 <small>/ month</small></div>
+        <p class="price-description">
+          Broader SEO support for businesses that need ongoing optimisation across multiple areas.
+        </p>
+        <ul class="price-features">
+          <li>Everything in Growth</li>
+          <li>Advanced technical SEO review</li>
+          <li>Content optimisation guidance</li>
+          <li>Local SEO improvements</li>
+          <li>Off-page SEO planning</li>
+          <li>Monthly reporting and priorities</li>
+        </ul>
+        <a class="btn2 btn2--ghost" href="#contact" data-plan="Professional SEO">Choose Professional</a>
+      </article>
+
+    </div>
+
+    <p class="pricing-note">
+      Prices are starting rates in USD. Final scope and pricing depend on your website, competition and required work. No guaranteed rankings.
+    </p>
+
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section class="section section--paper2" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">SEO Resources</span>
+      <h2 id="work-h">Helpful SEO insights for businesses</h2>
+      <p>
+        Practical articles and guidance to help small businesses understand SEO and improve their online visibility.
+      </p>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="work-card reveal">
+        <img
+          src="img/p1.jpg"
+          alt="SEO services and search optimisation guidance for plumbers"
+          width="800"
+          height="600"
+          loading="lazy"
+          decoding="async">
+        <div class="work-overlay">
+          <span class="cat">Industry SEO</span>
+          <h3>SEO for Plumbers</h3>
+        </div>
+        <a href="https://grabuild.com/seo-for-plumbers/" aria-label="Read SEO for Plumbers"></a>
+      </article>
+
+      <article class="work-card reveal" data-delay="1">
+        <img
+          src="img/p4.jpg"
+          alt="Local SEO strategies and search visibility guidance for roofers"
+          width="800"
+          height="600"
+          loading="lazy"
+          decoding="async">
+        <div class="work-overlay">
+          <span class="cat">Local SEO</span>
+          <h3>Local SEO for Roofers</h3>
+        </div>
+        <a href="https://grabuild.com/local-seo-for-roofers-how-much-does-seo-cost-in-the-uk/" aria-label="Read Local SEO for Roofers"></a>
+      </article>
+
+      <article class="work-card reveal" data-delay="2">
+        <img
+          src="img/p3.jpg"
+          alt="SEO guidance and online visibility for tree surgeons"
+          width="800"
+          height="600"
+          loading="lazy"
+          decoding="async">
+        <div class="work-overlay">
+          <span class="cat">Industry SEO</span>
+          <h3>SEO for Tree Surgeons</h3>
+        </div>
+        <a href="https://grabuild.com/seo-for-tree-surgeons/" aria-label="Read SEO for Tree Surgeons"></a>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section section--forest on-dark" id="process" aria-labelledby="process-h">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Our approach</span>
+      <h2 id="process-h">A clear approach to better SEO</h2>
+      <p>
+        SEO works best when every improvement has a purpose. Here's how I approach the work.
+      </p>
+    </div>
+
+    <div class="svc-grid">
+
+      <article class="svc-card reveal">
+        <span class="num-tag">01 — Understand</span>
+        <h3>Review your website</h3>
+        <p>
+          Start by understanding your website, target audience, search visibility and the issues that may be limiting performance.
+        </p>
+      </article>
+
+      <article class="svc-card reveal" data-delay="1">
+        <span class="num-tag">02 — Improve</span>
+        <h3>Build an SEO plan</h3>
+        <p>
+          Prioritise relevant improvements across on-page, off-page and technical SEO based on your business objectives.
+        </p>
+      </article>
+
+      <article class="svc-card reveal" data-delay="2">
+        <span class="num-tag">03 — Monitor</span>
+        <h3>Measure progress</h3>
+        <p>
+          Review search performance and identify further opportunities to improve visibility and attract relevant visitors.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" aria-labelledby="contact-h">
+  <div class="wrap contact-grid">
+
+    <div class="contact-intro reveal">
+
+      <span class="eyebrow">Let's talk</span>
+
+      <h2 id="contact-h">
+        Ready to improve your website's SEO?
+      </h2>
+
+      <p>
+        Whether you need help with technical issues, on-page optimisation or a stronger search strategy, let's discuss how SEO can support your business.
+      </p>
+
+      <ul class="contact-list">
+
+        <li>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>
+            <small>Email</small>
+            <a href="mailto:admin@grabuild.com">admin@grabuild.com</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>
+            <small>WhatsApp</small>
+            <a href="https://wa.me/8801614730573" target="_blank" rel="noopener noreferrer">Message Shuvro</a>
+          </span>
+        </li>
+
+        <li>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 21c5-4.5 7.5-8 7.5-11a7.5 7.5 0 0 0-15 0c0 3 2.5 6.5 7.5 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>
+            <small>Business focus</small>
+            UK Small Businesses
+          </span>
+        </li>
+
+      </ul>
+
+      <a class="btn2" href="https://grabuild.com/free-seo-audit/">
+        Request a Free SEO Audit
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </div>
+
+    <div class="form-card reveal">
+
+      <span class="eyebrow">Get in touch</span>
+
+      <h3>Let's discuss your SEO goals.</h3>
+
+      <p>
+        Tell me about your website and what you want to improve. I'll be happy to discuss your requirements.
+      </p>
+
+      <form class="grabuild-form" id="grabuildContactForm">
+
+        <div class="field">
+          <label for="contactName">Your Name *</label>
+          <input type="text" id="contactName" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="field">
+          <label for="contactEmail">Email Address *</label>
+          <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="field">
+          <label for="contactWebsite">Website URL</label>
+          <input type="url" id="contactWebsite" name="website" placeholder="https://yourwebsite.com">
+        </div>
+
+        <div class="field">
+          <label for="contactService">What SEO support do you need? *</label>
+          <select id="contactService" name="service" required>
+            <option value="">Select a service</option>
+            <option value="Free SEO Audit">Free SEO Audit</option>
+            <option value="Starter SEO — $99/month">Starter SEO — $99/month</option>
+            <option value="Growth SEO — $199/month">Growth SEO — $199/month</option>
+            <option value="Professional SEO — $349/month">Professional SEO — $349/month</option>
+            <option value="On-Page SEO">On-Page SEO</option>
+            <option value="Off-Page SEO">Off-Page SEO</option>
+            <option value="Technical SEO">Technical SEO</option>
+            <option value="Local SEO">Local SEO</option>
+            <option value="General Enquiry">General Enquiry</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="contactMessage">Your Message *</label>
+          <textarea id="contactMessage" name="message" placeholder="Tell me briefly about your SEO requirements..." required></textarea>
+        </div>
+
+        <div class="field">
+          <button type="submit" class="btn2">
+            Send Message via WhatsApp
+          </button>
+        </div>
+
+        <p class="form-note">
+          Your message will open in WhatsApp so you can review and send it directly to Grabuild.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        <a class="brand" href="#top" aria-label="Grabuild home">
+          <img src="img/GRABUILD.COM.png" alt="Grabuild logo" width="42" height="42" style="width:42px;height:42px;object-fit:contain;display:block;">
+          <span>Grabuild<small>SEO for Small Businesses</small></span>
+        </a>
+
+        <p>
+          Grabuild provides practical SEO services for UK small businesses. Helping businesses improve search visibility, attract relevant visitors and build a stronger online presence.
+        </p>
+
+      </div>
+
+      <nav class="footer-col" aria-label="Site">
+        <h4>Explore</h4>
+        <a href="#about">About</a>
+        <a href="#work">SEO Resources</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#process">Our Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Services">
+        <h4>SEO Services</h4>
+        <a href="#services">On-Page SEO</a>
+        <a href="#services">Off-Page SEO</a>
+        <a href="#services">Technical SEO</a>
+        <a href="https://grabuild.com/free-seo-audit/">Free SEO Audit</a>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Grabuild. All rights reserved.</p>
+      <p>SEO by <a href="https://grabuild.com/">Shuvro Haldar</a>.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Pricing selection and WhatsApp contact form -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* Select the chosen pricing plan in the contact form */
+  document.querySelectorAll('.price-card [data-plan]').forEach(function(button) {
+    button.addEventListener('click', function() {
+      var plan = button.getAttribute('data-plan');
+      var select = document.getElementById('contactService');
+
+      if (select && plan) {
+        var matchingOption = Array.from(select.options).find(function(option) {
+          return option.value.toLowerCase().includes(plan.toLowerCase());
+        });
+
+        if (matchingOption) {
+          select.value = matchingOption.value;
+        }
+      }
+    });
+  });
+
+  /* Send the contact form details through WhatsApp */
+  var contactForm = document.getElementById('grabuildContactForm');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      if (!contactForm.reportValidity()) {
+        return;
+      }
+
+      var name = document.getElementById('contactName').value.trim();
+      var email = document.getElementById('contactEmail').value.trim();
+      var website = document.getElementById('contactWebsite').value.trim();
+      var service = document.getElementById('contactService').value;
+      var message = document.getElementById('contactMessage').value.trim();
+
+      var whatsappMessage =
+        "Hello Grabuild,\n\n" +
+        "I would like to enquire about your SEO services.\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Website: " + (website || "Not provided") + "\n" +
+        "Service: " + service + "\n\n" +
+        "Message:\n" + message;
+
+      var whatsappURL =
+        "https://wa.me/8801614730573?text=" +
+        encodeURIComponent(whatsappMessage);
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>
