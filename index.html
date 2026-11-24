@@ -983,6 +983,90 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 </script>
+<!-- GRABUILD CMS CONNECTION -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", async function () {
+  try {
+    const response = await fetch("/content/home.md", {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error("CMS content file not found");
+    }
+
+    const markdown = await response.text();
+    const match = markdown.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/);
+
+    if (!match || !window.jsyaml) return;
+
+    const data = jsyaml.load(match[1]) || {};
+    const seo = data.seo || {};
+    const content = data.content || {};
+
+    function updateMeta(selector, value, attribute) {
+      if (!value) return;
+      const element = document.querySelector(selector);
+      if (element) element.setAttribute(attribute, value);
+    }
+
+    // SEO settings
+    if (seo.title) {
+      document.title = seo.title;
+      updateMeta('meta[property="og:title"]', seo.title, "content");
+      updateMeta('meta[name="twitter:title"]', seo.title, "content");
+    }
+
+    updateMeta('meta[name="description"]', seo.description, "content");
+    updateMeta('meta[property="og:description"]', seo.description, "content");
+    updateMeta('meta[name="twitter:description"]', seo.description, "content");
+    updateMeta('link[rel="canonical"]', seo.canonical, "href");
+
+    if (seo.robots) {
+      updateMeta('meta[name="robots"]', seo.robots, "content");
+    }
+
+    // Homepage content
+    if (content.heading) {
+      const heading = document.querySelector('[data-cms="heading"]');
+      if (heading) {
+        const words = content.heading.trim().split(/\s+/);
+        const lastWords = words.splice(-2).join(" ");
+
+        heading.replaceChildren(
+          document.createTextNode(words.join(" ") + " "),
+          document.createElement("br")
+        );
+
+        const accent = document.createElement("span");
+        accent.className = "accent";
+        accent.textContent = lastWords;
+        heading.appendChild(accent);
+      }
+    }
+
+    if (content.intro) {
+      const element = document.querySelector('[data-cms="intro"]');
+      if (element) element.textContent = content.intro;
+    }
+
+    if (content.about_heading) {
+      const element = document.querySelector('[data-cms="about_heading"]');
+      if (element) element.textContent = content.about_heading;
+    }
+
+    if (content.about_description) {
+      const element = document.querySelector('[data-cms="about_description"]');
+      if (element) element.textContent = content.about_description;
+    }
+
+  } catch (error) {
+    console.warn("Grabuild CMS:", error);
+  }
+});
+</script>
+<!-- END GRABUILD CMS CONNECTION -->
 </body>
 </html>
