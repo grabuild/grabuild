@@ -1,7 +1,7 @@
+
 backend:
-  name: github
-  repo: grabuild/grabuild
-  branch: main
+  name: turbo-github
+  turbo_site_id: e8a88777-20ce-4567-91ee-ac81be323bd6
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
