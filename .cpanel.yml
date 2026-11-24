@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/grabuild/public_html
-    - /bin/cp -R admin css img js index.html "$DEPLOYPATH"
+    - /bin/cp -R admin content css img js index.html "$DEPLOYPATH"
