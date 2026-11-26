@@ -1,6 +1,6 @@
 ---
 seo:
-  title: "Small Business SEO UK | "
+  title: Small Business SEO UK | Freelance SEO Specialist | Grabuild
   description: Grow your UK small business with practical SEO from Mr Shuvro at
     Grabuild. Improve Google visibility, attract relevant visitors and generate
     quality leads.
